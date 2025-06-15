@@ -1,0 +1,86 @@
+.ant-empty img {
+  display: inline-block;
+}
+.css-dev-only-do-not-override-1utsda3.ant-carousel .slick-dots {
+  z-index: 1 !important;
+}
+.custom-slick-arrow {
+  width: auto !important;
+  height: auto !important;
+}
+
+.mint-collapsed .ant-layout-sider-zero-width-trigger {
+  display: none !important;
+  opacity: 0.3;
+}
+
+.mint-collapsed:hover .ant-layout-sider-zero-width-trigger {
+  display: flex !important;
+}
+
+.mint-collapsed.ant-layout-sider-zero-width .ant-layout-sider-zero-width-trigger {
+  display: flex !important;
+  height: 100%;
+  top: 0;
+  width: 6px;
+  left: 0;
+  opacity: 0;
+}
+.mint-collapsed.ant-layout-sider-zero-width .ant-layout-sider-zero-width-trigger:hover {
+  opacity: 0.3;
+}
+.ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.flexible-tabs {
+  height: 100%;
+}
+
+.flexible-tabs .ant-tabs-content-holder {
+  overflow-y: auto !important;
+}
+.ant-tabs-extra-content {
+  height: 100%;
+}
+
+.top-menu-bar .ant-tabs-nav {
+  align-self: end;
+  width: 100%;
+    height: 2.5rem;
+    flex: auto;
+    display: flex !important;
+}
+
+.top-menu-bar .ant-tabs-nav-wrap {
+  height: 2.5rem;
+}
+
+.tauri-top-tabs .ant-tabs-content.ant-tabs-content-top {
+  height: 100%;
+}
+
+.full-modal {
+  .ant-modal {
+    max-width: 100%;
+    max-height: 100%;
+    height: 100%;
+    top: 0;
+    padding-bottom: 0;
+    margin: 0;
+    padding: 40px;
+  }
+  .ant-modal-body{
+    overflow: hidden;
+  }
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  .ant-modal-body {
+    flex: 1;
+  }
+}

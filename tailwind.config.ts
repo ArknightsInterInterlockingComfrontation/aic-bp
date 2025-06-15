@@ -1,0 +1,43 @@
+import type { Config } from "tailwindcss";
+export default <Partial<Config>>{
+  content: ["./src/components/*.{vue,ts}", "./src/layouts/**/*.vue", "./src/pages/*.vue", "./src/app.vue", "./src/error.vue", "./nuxt.config.ts"],
+  theme: {
+    extend: {
+      colors: {
+        primary: "#faad14",
+        "blue-team-color": "#1c5be4",
+        "red-team-color": "#e1331c",
+      },
+      spacing: {
+        15: "3.75rem",
+        17: "4.25rem",
+        18: "4.5rem",
+        19: "4.75rem",
+        22: "5.5rem",
+        26: "6.5rem",
+        30: "7.5rem",
+        34: "8.5rem",
+        38: "9.5rem",
+        42: "10.5rem",
+        46: "11.5rem",
+        50: "12.5rem",
+        100: "25rem",
+        104: "26rem",
+        108: "27rem",
+        112: "28rem",
+        116: "29rem",
+        120: "30rem",
+        124: "31rem",
+        128: "32rem",
+        132: "33rem",
+        136: "34rem",
+        140: "35rem",
+        144: "36rem",
+        148: "37rem",
+        152: "38rem",
+        156: "39rem",
+        160: "40rem",
+      },
+    },
+  },
+};

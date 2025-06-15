@@ -1,0 +1,160 @@
+.nuxt-icon svg {
+  margin-bottom: 0 !important;
+  height: unset !important;
+  width: unset !important;
+}
+:root {
+  --blue-team-color: #1c5be4;
+  --red-team-color: #e1331c;
+  --primary-color: #faad14;
+  --countdown-duration: 120s; 
+  --progress-start: 100%;
+}
+
+body {
+  font-family:
+    Helvetica Neue Regular,
+    Helvetica Neue,
+    Helvetica;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: #333333;
+}
+
+.original ul ul {
+  list-style-type: circle;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.original ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+.original li {
+  text-align: -webkit-match-parent;
+}
+
+.original table {
+  font-family: verdana, arial, sans-serif;
+  font-size: 11px;
+  color: #333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+.original table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+.original table td {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+
+.table-sticky {
+  thead.ant-table-thead {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+}
+
+.blue-progress {
+  background-color: var(--blue-team-color);
+  animation: animatedgradient-blue var(--countdown-duration) linear;
+  width: var(--progress-start);
+}
+.red-progress {
+  background-color: var(--red-team-color);
+  animation: animatedgradient-red var(--countdown-duration) linear;
+  width: var(--progress-start);
+}
+.pause-progress {
+  background-color: transparent;
+  width: 100%;
+}
+@keyframes animatedgradient-blue {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+@keyframes animatedgradient-red {
+  0% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0);
+  }
+}
+.angle-posi {
+  position: absolute;
+  left: 50%;
+  bottom: -21px;
+  margin-left: -10px;
+  border-right: 10px solid hsla(0, 0%, 100%, 0);
+  border-top: 10px solid #ffffff;
+  border-left: 10px solid hsla(0, 0%, 100%, 0);
+}
+
+.breathing-light {
+  opacity: 1;
+  animation: breathing 3s linear infinite;
+}
+
+.picked {
+  /* background-color: white; */
+  scale: 1;
+  animation: picked 0.5s;
+}
+
+@keyframes picked {
+  0%,
+  100% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.1;
+  }
+}
+
+@keyframes breathing {
+  0%,
+  100% {
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+.player-red {
+  clip-path: polygon(0% 0%, 60% 0%, 100% 100%, 0% 100%);
+}
+.player-blue {
+  clip-path: polygon(40% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+.operator-pick-left-arrow {
+  width: 160px;
+  height: 136px;
+  clip-path: polygon(0% 50%, 22% 0%, 100% 0%, 100% 100%, 22% 100%);
+}
+.operator-pick-right-arrow {
+  width: 160px;
+  height: 136px;
+  clip-path: polygon(100% 50%, 78% 0%, 0% 0%, 0% 100%, 78% 100%);
+}

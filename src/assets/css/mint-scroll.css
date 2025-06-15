@@ -1,0 +1,39 @@
+.mint-scroll ::-webkit-scrollbar {
+  border-radius: 9999px;
+  width: 8px;
+  height: 8px;
+  background: #eee;
+}
+.mint-scroll ::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 9999px;
+}
+.mint-scroll ::-webkit-scrollbar-thumb:hover {
+  background: #c1c1c1;
+  border-radius: 9999px;
+}
+.mint-scroll ::-webkit-scrollbar-thumb:active {
+  background: #a8a8a8;
+  border-radius: 9999px;
+}
+
+.mint-scroll-plus ::-webkit-scrollbar {
+  border-radius: 0px;
+  width: 0px;
+  height: 0px;
+}
+.mint-scroll-plus:hover ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0);
+}
+
+.mint-scroll-plus ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+.mint-scroll-plus ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+.mint-scroll-plus ::-webkit-scrollbar-thumb:active {
+  background: rgba(255, 255, 255, 0.5);
+}
